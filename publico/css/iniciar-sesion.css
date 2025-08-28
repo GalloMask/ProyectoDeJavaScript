@@ -1,0 +1,174 @@
+body{
+    margin: 0;
+}
+.layout{
+    display: grid;
+    min-height: 100vh;
+    margin: 0;
+    grid-template-areas: 
+    "nav"
+    "main"
+    "footer";
+    grid-template-rows: auto auto 1fr auto;
+}
+
+.nav{
+    grid-area: nav;
+    background-color: #1800ad;
+    height: 100px; /* Tamaño solicitado */
+    display: flex;
+    align-items: center;
+    padding: 0 20px;
+}
+
+.nav-container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Barra de búsqueda */
+.busqueda {
+    display: flex;
+    align-items: center;
+    width: 500px; /* Tamaño solicitado */
+    height: 40px;
+    background: white;
+    border-radius: 25px;
+    overflow: hidden;
+    padding: 0 10px;
+}
+
+.busqueda input {
+    flex: 1;
+    border: none;
+    outline: none;
+    padding: 0 15px;
+    font-size: 16px;
+    height: 100%;
+}
+
+.busqueda button {
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.busqueda img {
+    width: 20px;
+    height: 20px;
+}
+
+/* Menú de navegación */
+.nav-menu {
+    display: flex;
+    gap: 30px;
+    list-style: none;
+    margin-right: 10px;
+    padding: 0;
+    left: 50%;
+}
+
+.nav-menu a {
+    text-decoration: none;
+    color: #f6f1ff;
+    font-size: 26px;
+    font-weight: 500;
+    transition: color 0.3s;
+}
+
+.nav-menu a:hover {
+    color: #f2c5d6;
+}
+
+/* Iconos del nav */
+.nav-icons {
+    display: flex;
+    align-items: center;
+    position: relative;
+    margin-left: 200px;
+    gap: 50px;
+}
+
+.cart-link, .profile-link {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: #f6f1ff;
+    gap: 5px;
+    font-size: 26px;
+}
+
+.cart-link img, .profile-link img {
+    width: 24px;
+    height: 24px;
+}
+
+#perfil {  
+    width: 34px; /* Tamaño del círculo */
+    height: 34px;
+    background-color: #f6f1ff; /* Color de fondo del círculo */
+    border-radius: 50%; /* Hace el círculo */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.main{
+    grid-area: main;
+    background: #f6f1ff;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+}
+
+.contenedor-registro{
+    display: flex;
+    width: 800px;
+    height: 800px;
+    margin: 80px;
+    border-radius: 10%;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    background: #ecabc4;
+}
+
+.formulario{
+    display: flex;
+    flex-direction: column;
+    width: 500px;
+    height: 40px;
+    gap: 20px;
+}
+
+.footer{
+    grid-area: footer;
+    background-color:#1800ad ;
+    display: flex;
+    justify-content: center;
+}
+.footer-contenedor{
+    display: flex;
+    flex-direction: center;
+    color: #f2c5d6;
+    gap: 540px;
+}
+
+.footer-contenedor a{
+    text-decoration: none;
+    color: #f2c5d6;
+}
+
+.footer-contenedor ul{
+    list-style: none;
+    display: inline;
+    margin-bottom: 20px;
+}
