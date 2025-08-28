@@ -1,3 +1,6 @@
+body{
+    margin: 0;
+}
 .layout{
     display: grid;
     min-height: 100vh;
@@ -12,7 +15,7 @@
 .nav{
     grid-area: nav;
     background-color: #1800ad;
-    height: 70px; /* Tamaño solicitado */
+    height: 100px; /* Tamaño solicitado */
     display: flex;
     align-items: center;
     padding: 0 20px;
@@ -21,7 +24,7 @@
 .nav-container {
     width: 100%;
     max-width: 1200px;
-    margin: 0 auto;
+    margin: 0;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -37,7 +40,6 @@
     border-radius: 25px;
     overflow: hidden;
     padding: 0 10px;
-    margin-right: auto;
 }
 
 .busqueda input {
@@ -69,11 +71,9 @@
     display: flex;
     gap: 30px;
     list-style: none;
-    margin: 0;
+    margin-right: 10px;
     padding: 0;
-    position: absolute;
     left: 50%;
-    transform: translateX(-50%);
 }
 
 .nav-menu a {
@@ -92,7 +92,8 @@
 .nav-icons {
     display: flex;
     align-items: center;
-    margin-left: auto;
+    position: relative;
+    margin-left: 200px;
     gap: 50px;
 }
 
@@ -111,14 +112,13 @@
 }
 
 #perfil {  
-    width: 44px; /* Tamaño del círculo */
-    height: 44px;
-    background-color: #f2c5d6; /* Color de fondo del círculo */
+    width: 34px; /* Tamaño del círculo */
+    height: 34px;
+    background-color: #f6f1ff; /* Color de fondo del círculo */
     border-radius: 50%; /* Hace el círculo */
     display: flex;
     align-items: center;
     justify-content: center;
-    padding: 8px; /* Espacio interno */
 }
 
 .main{
