@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/styles.css">
-    <title>BautyBack</title>
+    <title>BeautyBack</title>
 </head>
 <body>
     <div class="layout">
@@ -12,20 +12,32 @@
         <!-- talves lo haga -->
     </header>
     <nav class="nav">
-        <form action="">
-            <input type="text">
-        </form>
-        <ul>
-            <li><a href="">Skincare</a></li>
-            <li><a href="">Maquillaje</a></li>
-            <li><a href="">Contactanos</a></li>
-            <div class="ladoDer">
-                <li><a href="">Carrito</a></li>
-                <li><a href="">Iniciar sesion</a></li>
-                <img src="imagenes/perfil.png" alt="imagen de perfil">
+            <div class="nav-container">
+                <form action="" class="busqueda">
+                    <input type="text" placeholder="Buscar productos...">
+                    <button type="submit">
+                        <img src="imagenes/lupa.png" alt="Buscar">
+                    </button>
+                </form>
+                
+                <ul class="nav-menu">
+                    <li><a href="">Skincare</a></li>
+                    <li><a href="">Maquillaje</a></li>
+                    <li><a href="">Contactanos</a></li>
+                </ul>
+                
+                <div class="nav-icons">
+                    <a href="" class="cart-link">
+                        <img src="imagenes/carrito-de-compras.png" alt="Carrito de compras">
+                        <span>Carrito</span>
+                    </a>
+                    <a href="" class="profile-link">
+                        <img src="imagenes/perfil.png" alt="Iniciar sesión" id="perfil">
+                        <span>Iniciar sesión</span>
+                    </a>
+                </div>
             </div>
-        </ul>
-    </nav>
+        </nav>
     <main class="main">
         <img src="imagenes/baner1.jpg" alt="baner sobre promociones del 50%  si compra ahora ">
 
@@ -77,6 +89,7 @@
                 </ul>
             </div>
             <div class="footer-seccion">
+                <h4>Integrantes del Grupo 5</h4>
                 <ul>
                     <li><a href="https://github.com/GalloMask">Catcata Aleman Fátima María del C.</a></li>
                     <li><a href="https://github.com/SBigTheo">Caro Victor Facundo.</a></li>

@@ -12,17 +12,113 @@
 .nav{
     grid-area: nav;
     background-color: #1800ad;
+    height: 70px; /* Tamaño solicitado */
     display: flex;
+    align-items: center;
+    padding: 0 20px;
+}
+
+.nav-container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Barra de búsqueda */
+.busqueda {
+    display: flex;
+    align-items: center;
+    width: 500px; /* Tamaño solicitado */
+    height: 40px;
+    background: white;
+    border-radius: 25px;
+    overflow: hidden;
+    padding: 0 10px;
+    margin-right: auto;
+}
+
+.busqueda input {
+    flex: 1;
+    border: none;
+    outline: none;
+    padding: 0 15px;
+    font-size: 16px;
+    height: 100%;
+}
+
+.busqueda button {
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 5px;
+    display: flex;
+    align-items: center;
     justify-content: center;
 }
 
-.nav ul{
-    list-style: none;
+.busqueda img {
+    width: 20px;
+    height: 20px;
 }
 
-.nav img{
-    width: 50px;
-    height: 50px;
+/* Menú de navegación */
+.nav-menu {
+    display: flex;
+    gap: 30px;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.nav-menu a {
+    text-decoration: none;
+    color: #f6f1ff;
+    font-size: 26px;
+    font-weight: 500;
+    transition: color 0.3s;
+}
+
+.nav-menu a:hover {
+    color: #f2c5d6;
+}
+
+/* Iconos del nav */
+.nav-icons {
+    display: flex;
+    align-items: center;
+    margin-left: auto;
+    gap: 50px;
+}
+
+.cart-link, .profile-link {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: #f6f1ff;
+    gap: 5px;
+    font-size: 26px;
+}
+
+.cart-link img, .profile-link img {
+    width: 24px;
+    height: 24px;
+}
+
+#perfil {  
+    width: 44px; /* Tamaño del círculo */
+    height: 44px;
+    background-color: #f2c5d6; /* Color de fondo del círculo */
+    border-radius: 50%; /* Hace el círculo */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 8px; /* Espacio interno */
 }
 
 .main{
@@ -30,7 +126,7 @@
     background-color: #f6f1ff;
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    align-items: center;
 }
 
 .main img{
@@ -38,11 +134,11 @@
     height: 350px;
     display: flex;
     align-content: center;
-    margin-top: 10px;
+    margin-top: 40px;
 }
 
 .content-productos{
-    gap: 150px;
+    gap: 50px;
     display: flex;
 }
 
@@ -56,7 +152,7 @@
     background: #f2c5d6;
     border-radius: 10%;
     text-decoration: none;
-    margin-left: 80px;
+    margin: 80px;
     padding: 20px;
 }
 
@@ -68,5 +164,24 @@
 
 .footer{
     grid-area: footer;
-    background-color: #1800ad
+    background-color:#1800ad ;
+    display: flex;
+    justify-content: center;
+}
+.footer-contenedor{
+    display: flex;
+    flex-direction: center;
+    color: #f2c5d6;
+    gap: 540px;
+}
+
+.footer-contenedor a{
+    text-decoration: none;
+    color: #f2c5d6;
+}
+
+.footer-contenedor ul{
+    list-style: none;
+    display: inline;
+    margin-bottom: 20px;
 }
